@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-dingtalk",
+  "version": "1.0.0",
+  "description": "DingTalk Connector — Cortex agent in Alibaba's DingTalk platform (500M+ users) with group chat commands and approval workflow integration",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-dingtalk",
+  "homepage": "https://cortexprism.io/marketplace/plugins/dingtalk",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "dingtalk_send_message",
+      "description": "Send message to DingTalk group or user",
+      "params": []
+    },
+    {
+      "name": "dingtalk_create_approval",
+      "description": "Create an approval process",
+      "params": []
+    },
+    {
+      "name": "dingtalk_get_department",
+      "description": "Get department members and structure",
+      "params": []
+    },
+    { "name": "dingtalk_send_ding", "description": "Send a DING urgent notification", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
