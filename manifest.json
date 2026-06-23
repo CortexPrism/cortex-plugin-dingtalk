@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-dingtalk",
-  "version": "1.0.0",
-  "description": "DingTalk Connector — Cortex agent in Alibaba's DingTalk platform (500M+ users) with group chat commands and approval workflow integration",
+  "version": "1.0.1",
+  "description": "DingTalk Connector \u2014 Cortex agent in Alibaba's DingTalk platform (500M+ users) with group chat commands and approval workflow integration",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-dingtalk",
   "homepage": "https://cortexprism.io/marketplace/plugins/dingtalk",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "dingtalk_send_message",
@@ -26,9 +29,20 @@
       "description": "Get department members and structure",
       "params": []
     },
-    { "name": "dingtalk_send_ding", "description": "Send a DING urgent notification", "params": [] }
+    {
+      "name": "dingtalk_send_ding",
+      "description": "Send a DING urgent notification",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
